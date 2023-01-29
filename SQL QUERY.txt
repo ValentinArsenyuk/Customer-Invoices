@@ -1,0 +1,40 @@
+USE [DBTEST]
+GO
+	
+/****** Object:  Table [dbo].[CustomerInvoices]    Script Date: 27.01.2023 12:56:39 ******/
+SET ANSI_NULLS ON
+GO
+	
+SET QUOTED_IDENTIFIER ON
+GO
+	
+	CREATE TABLE [dbo].[CustomerInvoices](
+		[Id] [int] IDENTITY(1,1) NOT NULL,
+		[Date] [date] NULL,
+		[Status] [nvarchar](150) NULL,
+		[Amount] [int] NULL
+	) ON [PRIMARY]
+GO
+
+--------------------------------------------------------------------------------------------------
+
+USE [DBTEST]
+GO
+
+INSERT INTO [dbo].[CustomerInvoices]
+           ([Date]
+           ,[Status]
+           ,[Amount])
+     VALUES
+            ('2023-01-26','1',55000),
+			('2023-01-26','1',7000),
+			('2023-01-27','1',3000),
+			('2023-01-26','1',2000),
+			('2023-01-28','1',100),
+			('2023-01-21','1',300),
+			('2023-01-23','1',25000),
+			('2023-01-29','1',750);
+		   
+GO
+
+----------------------------------------------------------------------------------------------------

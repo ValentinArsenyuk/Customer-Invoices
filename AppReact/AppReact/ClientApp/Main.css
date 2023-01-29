@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.title
+{
+    width:100px;
+}
+.value{
+    width:200px;
+}
+
+.lightbox {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s all;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.hide-lightbox {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
